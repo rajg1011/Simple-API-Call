@@ -17,8 +17,8 @@ app.post("/", (req, res) => {
       var fullData = JSON.parse(data);
       var latitudes = fullData[0].lat;
       var longs = fullData[0].lon;
-      res.write(`<h1>The Latitude of London ${latitudes}</h1>`);
-      res.write(`<h1>The Longititude of London ${longs}</h1>`);
+      res.write(`<h1>The Latitude of ${cityName} ${latitudes}</h1>`);
+      res.write(`<h1>The Longititude of ${cityName} ${longs}</h1>`);
       res.send();
     });
   });
